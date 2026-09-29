@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Header from "./Header";
 
 export default function Card({ imgSrc, title, author, desc }) {
     const [show, setShow] = useState(false);
@@ -7,8 +8,8 @@ export default function Card({ imgSrc, title, author, desc }) {
         <div className="flex flex-col justify-center items-center shadow-xl rounded-2xl gap-4 hover:rotate-10 transition-transform duration-300 cursor-pointer">
             <img className="size-80 rounded-t-2xl" src={imgSrc} alt="Heaven" />
 
-            <div className="flex flex-col gap-2 px-4 py-2">
-                <h1 className="text-xl font-bold">{title}</h1>
+            <div className="w-full flex flex-col gap-2 px-4 py-2 min-w-0">
+                <Header text={title} />
 
                 <span>{author}</span>
 
@@ -18,5 +19,6 @@ export default function Card({ imgSrc, title, author, desc }) {
                     {show ? "Hide Details" : "Show Details"}
                 </button>
             </div>
-        </div >);
+        </div >
+    );
 }
