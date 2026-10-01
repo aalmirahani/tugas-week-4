@@ -1,16 +1,60 @@
-# React + Vite
+# Interactive Profile Card
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project ini merupakan tugas individu Week 4 React Fundamental yang dibuat menggunakan React dan Vite.
 
-Currently, two official plugins are available:
+Project ini menampilkan Header dan Profile Card dengan menggunakan konsep dasar React seperti **Component, Props, dan State (useState)**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Fitur
 
-## React Compiler
+* Menggunakan React dan Vite
+* Menggunakan reusable components
+* Menggunakan Props untuk mengirim data
+* Menggunakan useState untuk fitur interaktif
+* Memiliki tombol Like dengan counter
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Struktur Project
 
-## Expanding the ESLint configuration
+```text
+src/
+├── components/
+│   ├── Card.jsx
+│   └── Header.jsx
+├── App.jsx
+├── index.css
+└── main.jsx
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Teknologi
+
+* React
+* Vite
+* JavaScript
+* CSS
+
+## Cara Menjalankan Project
+
+### 1. Install Dependencies
+
+Buka terminal pada folder project, kemudian jalankan:
+
+```bash
+npm install
+```
+
+### 2. Menjalankan Project
+
+Setelah proses instalasi selesai, jalankan:
+
+```bash
+npm run dev
+```
+
+Kemudian buka link localhost yang muncul pada terminal untuk melihat project di browser.
+
+## React + Vite
+
+Project ini menggunakan Vite sebagai development tool dan React untuk membangun antarmuka web.
+
+---
+
+**Tugas Week 4 — React Fundamental**
